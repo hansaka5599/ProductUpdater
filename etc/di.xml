@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ProductUpdater" xsi:type="object">Ecommistry\ProductUpdater\Console\Command\ProductUpdaterCommand</item>
+            </argument>
+        </arguments>
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ProductMessages" xsi:type="object">Ecommistry\ProductUpdater\Console\Command\ProductMessagesCommand</item>
+            </argument>
+        </arguments>
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ProductSpecialPrices" xsi:type="object">Ecommistry\ProductUpdater\Console\Command\ProductSpecialPricesCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
